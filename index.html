@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neeraj Kumar — AI Student | SZABIST Karachi</title>
+<meta name="description" content="Neeraj Kumar — BS Artificial Intelligence student at SZABIST Karachi. Building RailNova, ML Intern at Arch Technologies, PTE Pakistan Campus Ambassador.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ambient glows -->
+<div class="glow glow--cyan"></div>
+<div class="glow glow--violet"></div>
+<div class="glow glow--amber"></div>
+<canvas id="particles"></canvas>
+
+<!-- ════════════════ NAV ════════════════ -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">NK<span>.</span></a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#about">about</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#certificates">certificates</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:1rem">
+      <a class="resume-btn" href="Neeraj_Kumar_CV.pdf" download>résumé ↓</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ════════════════ HERO ════════════════ -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- Left -->
+      <div class="hero-content">
+        <div class="status-line">
+          <span class="status-dot"></span>
+          status: online · open to internship opportunities · karachi, pk
+        </div>
+        <div class="hero-eyebrow">hello, i'm</div>
+        <h1 class="hero-name">Neeraj <span class="accent">Kumar</span>.</h1>
+        <p class="hero-tagline"><span id="typedText">AI Student | Building Intelligent Systems</span><span style="color:var(--cyan);animation:pulse 1s infinite">|</span></p>
+        <p class="hero-desc">2nd-semester BS Artificial Intelligence student at SZABIST Karachi — building AI-powered systems, completing ML internships, and giving back to the community.</p>
+
+        <span class="flap-label">currently identifying as</span>
+        <div class="flap-board" id="flapBoard" aria-hidden="true"></div>
+
+        <div class="btn-group">
+          <a href="#projects" class="btn btn-primary">View my work →</a>
+          <a href="Neeraj_Kumar_CV.pdf" class="btn btn-outline" download>Download CV ↓</a>
+        </div>
+
+        <div class="hero-links">
+          <a href="https://github.com/Neeraj3456" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/neeraj-kumar-3601a03a7/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:lalwanineeraj550@gmail.com">Email</a>
+          <a href="tel:+923360123263">+92 336 0123263</a>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="hero-photo">
+        <div class="hero-photo-frame">
+          <span class="corner corner--tl"></span>
+          <span class="corner corner--tr"></span>
+          <span class="corner corner--bl"></span>
+          <span class="corner corner--br"></span>
+          <div class="scan-line"></div>
+          <img src="profile_pic.jpeg" alt="Neeraj Kumar">
+        </div>
+        <p class="photo-caption">neeraj kumar · karachi, pk</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ ABOUT ════════════════ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="eyebrow reveal">platform 01 — about</div>
+    <h2 class="section-title reveal">About <em>me</em>.</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a Bachelor of Science in Artificial Intelligence student at SZABIST University, Karachi, currently in my 2nd semester. I'm passionate about exploring how AI and emerging technologies can solve real-world problems, and I enjoy turning ideas into working systems through hands-on projects.</p>
+        <p>Recently, I worked with a team of five to build RailNova, an AI-powered Railway Management System featuring real-time train tracking, ticket booking, seat reservations, automated scheduling, and an admin dashboard. We presented it at ZAB-E-FEST 2026 and won a Certificate of Achievement for it.</p>
+        <p>I also completed a Machine Learning Internship at Arch Technologies, building Python projects covering OOP, data structures, and real-world problem solving. Beyond academics, I serve as a PTE Pakistan Campus Ambassador and volunteer with Voice of Hope and the Green Heart Movement.</p>
+        <p>I'm always eager to learn, collaborate, and connect with like-minded students, innovators, and professionals in the AI and tech space.</p>
+      </div>
+      <div class="about-stats reveal reveal-delay-1">
+        <div class="stat-card"><div class="stat-num">2nd</div><div class="stat-label">semester · bs ai</div></div>
+        <div class="stat-card"><div class="stat-num">10+</div><div class="stat-label">certificates earned</div></div>
+        <div class="stat-card"><div class="stat-num">3</div><div class="stat-label">languages spoken</div></div>
+        <div class="stat-card"><div class="stat-num">2029</div><div class="stat-label">expected graduation</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ EXPERIENCE ════════════════ -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="eyebrow reveal">platform 02 — experience</div>
+    <h2 class="section-title reveal">Work <em>experience</em>.</h2>
+
+    <div class="reveal">
+      <div class="exp-item">
+        <div class="exp-date">May – Jun 2026<br><span style="color:var(--green);font-size:.72rem">8 weeks · remote</span></div>
+        <div>
+          <span class="exp-badge">Internship</span>
+          <div class="exp-title">Machine Learning Intern</div>
+          <div class="exp-org">Arch Technologies · Intern ID: ARCH-2605-1185</div>
+          <ul>
+            <li>Built a Dice Rolling Game with randomized rolls and replay logic</li>
+            <li>Developed a To-Do List Application with task management and progress tracking</li>
+            <li>Created a Number Guessing Game with hint-based interactive logic</li>
+            <li>Implemented an ATM Simulation using class-based OOP (deposit, withdrawal, balance)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-date">2026 – Present</div>
+        <div>
+          <span class="exp-badge">Ambassador</span>
+          <div class="exp-title">Campus Ambassador</div>
+          <div class="exp-org">PTE Pakistan · Pearson Test of English</div>
+          <p>Representing PTE Pakistan on campus, guiding students through PTE exam preparation and study-abroad pathways, including referrals for exams, offline and online classes, and mock exams.</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-date">2026</div>
+        <div>
+          <span class="exp-badge">Team Project</span>
+          <div class="exp-title">Team Lead — RailNova (AI-Powered Railway Management System)</div>
+          <div class="exp-org">SZABIST University · ZAB-E-FEST 2026</div>
+          <ul>
+            <li>Collaborated with a team of 5 to design and build a full railway management platform</li>
+            <li>Implemented real-time train tracking, ticket booking, seat reservations, and an admin dashboard</li>
+            <li>Presented at ZAB-E-FEST 2026 — received Certificate of Achievement (Code Crafters)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ PROJECTS ════════════════ -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="eyebrow reveal">platform 03 — projects</div>
+    <h2 class="section-title reveal">Featured <em>builds</em>.</h2>
+
+    <!-- RailNova -->
+    <div class="featured-card reveal">
+      <span class="feat-badge">Featured · ZAB-E-FEST 2026 · SZABIST</span>
+      <h3>RailNova — AI-Powered Railway Management System</h3>
+      <p>Built with a team of five as a 2nd-semester capstone. RailNova reimagines the full railway experience — from real-time tracking to passenger booking — in a single AI-driven platform. Showcased at ZAB-E-FEST 2026 and won Certificate of Achievement.</p>
+      <div class="feature-grid">
+        <div class="feature-item"><span>tracking</span><p>Real-time train location for passengers and operators</p></div>
+        <div class="feature-item"><span>booking</span><p>End-to-end ticket booking with confirmation flow</p></div>
+        <div class="feature-item"><span>seats</span><p>Live seat availability across routes and classes</p></div>
+        <div class="feature-item"><span>scheduling</span><p>Automated timetables, reducing manual planning</p></div>
+        <div class="feature-item"><span>admin</span><p>Central dashboard to manage all trains and routes</p></div>
+      </div>
+      <div class="tags-row">
+        <span class="tag">Python</span>
+        <span class="tag">AI/ML Concepts</span>
+        <span class="tag">System Design</span>
+        <span class="tag">Team of 5</span>
+        <span class="tag">ZAB-E-FEST 2026</span>
+      </div>
+      <a href="https://github.com/Neeraj3456" target="_blank" rel="noopener" class="more-link" style="margin-top:1.5rem">View on GitHub →</a>
+    </div>
+
+    <!-- Other projects grid -->
+    <div class="proj-grid reveal">
+      <div class="proj-card">
+        <div class="proj-icon">🦯</div>
+        <h4>Smart Blind Stick</h4>
+        <p>An obstacle-detecting assistive stick using HC-SR04 ultrasonic sensor, NE555 Timer IC, BC547 transistor, and buzzer — built without any microcontroller. A DLD lab project with real social impact.</p>
+        <div class="tags-row" style="margin-top:auto">
+          <span class="tag">Electronics</span><span class="tag">555 Timer</span><span class="tag">Circuit Design</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-icon">🐍</div>
+        <h4>ML Internship Projects</h4>
+        <p>4 Python projects at Arch Technologies — Dice Game, To-Do App, Number Guessing Game, ATM Simulation — applying OOP, control flow, exception handling, and randomisation.</p>
+        <div class="tags-row" style="margin-top:auto">
+          <span class="tag">Python</span><span class="tag">OOP</span><span class="tag">Arch Technologies</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-icon">🤖</div>
+        <h4>AI Voice Agents</h4>
+        <p>Completed masterclass on building real-time AI voice agents using VAPI — integrating LLMs with speech systems, managing conversation flow, and deploying intelligent voice apps.</p>
+        <div class="tags-row" style="margin-top:auto">
+          <span class="tag">VAPI</span><span class="tag">LLMs</span><span class="tag">Voice AI</span>
+        </div>
+      </div>
+    </div>
+    <a href="https://github.com/Neeraj3456?tab=repositories" target="_blank" rel="noopener" class="more-link">See all on GitHub →</a>
+  </div>
+</section>
+
+<!-- ════════════════ CERTIFICATES ════════════════ -->
+<section class="section" id="certificates">
+  <div class="container">
+    <div class="eyebrow reveal">platform 04 — credentials</div>
+    <h2 class="section-title reveal">Certificates <em>&amp; awards</em>.</h2>
+
+    <div class="cert-filter reveal">
+      <button class="cert-filter-btn active" data-cat="all">All</button>
+      <button class="cert-filter-btn" data-cat="ai">AI &amp; ML</button>
+      <button class="cert-filter-btn" data-cat="dev">Dev &amp; Tech</button>
+      <button class="cert-filter-btn" data-cat="design">Design</button>
+      <button class="cert-filter-btn" data-cat="community">Community</button>
+      <button class="cert-filter-btn" data-cat="award">Awards</button>
+    </div>
+
+    <div class="cert-grid reveal">
+
+      <!-- ZAB-E-FEST Certificate of Achievement -->
+      <div class="cert-card" data-cat="award" data-src="Zab-e-fest_codecrafter.pdf" data-pdf="true">
+        <div class="cert-thumb-pdf">
+          <div class="pdf-icon">🏆</div>
+          <div class="pdf-org">SZABIST · ZAB-E-FEST 2026</div>
+        </div>
+        <div class="cert-body">
+          <span class="cert-cat cert-cat--award">Award</span>
+          <div class="cert-title">Certificate of Achievement — Code Crafters</div>
+          <div class="cert-org">SZABIST University</div>
+          <div class="cert-date">June 8–9, 2026</div>
+          <span class="cert-view">View certificate →</span>
+        </div>
+      </div>
+
+      <!-- ML Offer Letter -->
+      <div class="cert-card" data-cat="ai" data-src="Machine_Learning_OFFER_LETTER.pdf" data-pdf="true">
+        <div class="cert-thumb-pdf">
+          <div class="pdf-icon">🤝</div>
+          <div class="pdf-org">Arch Technologies</div>
+        </div>
+        <div class="cert-body">
+          <span class="cert-cat cert-cat--ai">AI &amp; ML</span>
+          <div class="cert-title">Machine Learning Internship Offer Letter</div>
+          <div class="cert-org">Arch Technologies</div>
+          <div class="cert-date">May – Jun 2026</div>
+          <span class="cert-view">View document →</span>
+        </div>
+      </div>
+
+      <!-- PTE Ambassador -->
+      <div class="cert-card" data-cat="community" data-src="PTE_Ambassador_Certificate.pdf" data-pdf="true">
+        <div class="cert-thumb-pdf">
+          <div class="pdf-icon">🌍</div>
+          <div class="pdf-org">PTE Pakistan · Pearson</div>
+        </div>
+        <div class="cert-body">
+          <span class="cert-cat cert-cat--community">Community</span>
+          <div class="cert-title">Campus Ambassador Certificate</div>
+          <div class="cert-org">PTE Pakistan · Pearson Test of English</div>
+          <div class="cert-date">04 May 2026</div>
+          <span class="cert-view">View certificate →</span>
+        </div>
+      </div>
+
+      <!-- Build with AI (image) -->
+      <div class="cert-card" data-cat="ai" data-src="Building_AI_Voice_Agents_with_Vapi_certificate.png" data-pdf="false">
+        <div class="cert-thumb">
+          <img src="Building_AI_Voice_Agents_with_Vapi_certificate.png" alt="Building AI Voice Agents with VAPI" loading="lazy">
+        </div>
+        <div class="cert-body">
+          <span class="cert-cat cert-cat--ai">AI &amp; ML</span>
+          <div class="cert-title">Building AI Voice Agents with VAPI</div>
+          <div class="cert-org">DataCrumbs</div>
+          <div class="cert-date">20 Feb 2026</div>
+          <span class="cert-view">View certificate →</span>
+        </div>
+      </div>
+
+      <!-- Outskill Generative AI -->
+      <div class="cert-card" data-cat="ai" data-src="outskills_certificate_.pdf" data-pdf="true">
+        <div class="cert-thumb-pdf">
+          <div class="pdf-icon">🧠</div>
+          <div class="pdf-org">Outskill</div>
+        </div>
+        <div class="cert-body">
+          <span class="cert-cat cert-cat--ai">AI &amp; ML</span>
+          <div class="cert-title">Generative AI Mastermind</div>
+          <div class="cert-org">Outskill</div>
+          <div class="cert-date">2026</div>
+          <span class="cert-view">View certificate →</span>
+        </div>
+      </div>
+
+      <!-- HP AI for Beginners -->
+      <div class="cert-card" data-cat="ai" data-src="ai_certificate.pdf" data-pdf="true">
+        <div class="cert-thumb-pdf">
+          <div class="pdf-icon">💻</div>
+          <div class="pdf-org">HP LIFE · HP Foundation</div>
+        </div>
+        <div class="cert-body">
+          <span class="cert-cat cert-cat--ai">AI &amp; ML</span>
+          <div class="cert-title">AI for Beginners</div>
+          <div class="cert-org">HP LIFE · HP Foundation</div>
+          <div class="cert-date">4 May 2025</div>
+          <span class="cert-view">View certificate →</span>
+        </div>
+      </div>
+
+      <!-- Cybersecurity -->
+      <div class="cert-card" data-cat="dev" data-src="cybersecurity_certificate.pdf" data-pdf="true">
+        <div class="cert-thumb-pdf">
+          <div class="pdf-icon">🔐</div>
+          <div class="pdf-org">HP LIFE · HP Foundation</div>
+        </div>
+        <div class="cert-body">
+          <span class="cert-cat cert-cat--dev">Dev &amp; Tech</span>
+          <div class="cert-title">Introduction to Cybersecurity Awareness</div>
+          <div class="cert-org">HP LIFE · HP Foundation</div>
+          <div class="cert-date">6 Apr 2025</div>
+          <span class="cert-view">View certificate →</span>
+        </div>
+      </div>
+
+      <!-- Aptech SEO -->
+      <div class="cert-card" data-cat="dev" data-src="aptech_.pdf" data-pdf="true">
+        <div class="cert-thumb-pdf">
+          <div class="pdf-icon">🔍</div>
+          <div class="pdf-org">Aptech Learning</div>
+        </div>
+        <div class="cert-body">
+          <span class="cert-cat cert-cat--dev">Dev &amp; Tech</span>
+          <div class="cert-title">3-Day SEO Workshop</div>
+          <div class="cert-org">Aptech Gulshan-e-Iqbal</div>
+          <div class="cert-date">8 April 2026</div>
+          <span class="cert-view">View certificate →</span>
+        </div>
+      </div>
+
+      <!-- One Year Computer -->
+      <div class="cert-card" data-cat="dev" data-src="one_year__computer.pdf" data-pdf="true">
+        <div class="cert-thumb-pdf">
+          <div class="pdf-icon">🖥️</div>
+          <div class="pdf-org">Mohit Technical Institute</div>
+        </div>
+        <div class="cert-body">
+          <span class="cert-cat cert-cat--dev">Dev &amp; Tech</span>
+          <div class="cert-title">One Year Computer Course</div>
+          <div class="cert-org">Mohit Technical &amp; Vocational Training Institute, Umerkot</div>
+          <div class="cert-date">Nov 2021 – Nov 2022</div>
+          <span class="cert-view">View certificate →</span>
+        </div>
+      </div>
+
+      <!-- Graphic Designing DSC -->
+      <div class="cert-card" data-cat="design" data-src="certificate_graphic_designing.jpg" data-pdf="false">
+        <div class="cert-thumb">
+          <img src="certificate_graphic_designing.jpg" alt="Graphic Designing Certificate" loading="lazy">
+        </div>
+        <div class="cert-body">
+          <span class="cert-cat cert-cat--design">Design</span>
+          <div class="cert-title">Graphic Designing (1-Month Course)</div>
+          <div class="cert-org">Digital Skills Center</div>
+          <div class="cert-date">30 Nov 2025</div>
+          <span class="cert-view">View certificate →</span>
+        </div>
+      </div>
+
+      <!-- Graphic Designing Super Sys-Tech -->
+      <div class="cert-card" data-cat="design" data-src="graphic.jpeg" data-pdf="false">
+        <div class="cert-thumb">
+          <img src="graphic.jpeg" alt="Graphics Designing Certificate" loading="lazy">
+        </div>
+        <div class="cert-body">
+          <span class="cert-cat cert-cat--design">Design</span>
+          <div class="cert-title">Graphics Designing Course</div>
+          <div class="cert-org">Super Sys-Tech Computers Centre, Umerkot</div>
+          <div class="cert-date">Dec 2023 – Jun 2024</div>
+          <span class="cert-view">View certificate →</span>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="cert-card" data-cat="community" data-src="soft_skills.pdf" data-pdf="true">
+        <div class="cert-thumb-pdf">
+          <div class="pdf-icon">🌟</div>
+          <div class="pdf-org">Hindu Sindh Foundation</div>
+        </div>
+        <div class="cert-body">
+          <span class="cert-cat cert-cat--community">Community</span>
+          <div class="cert-title">Soft Skills Training Program</div>
+          <div class="cert-org">Hindu Sindh Foundation</div>
+          <div class="cert-date">24 January 2025</div>
+          <span class="cert-view">View certificate →</span>
+        </div>
+      </div>
+
+      <!-- Mental Health Awareness -->
+      <div class="cert-card" data-cat="community" data-src="mental_health_awareness.pdf" data-pdf="true">
+        <div class="cert-thumb-pdf">
+          <div class="pdf-icon">💚</div>
+          <div class="pdf-org">Global Shapers · Rawalpindi Hub</div>
+        </div>
+        <div class="cert-body">
+          <span class="cert-cat cert-cat--community">Community</span>
+          <div class="cert-title">Mental Health Awareness Session</div>
+          <div class="cert-org">Global Shapers Rawalpindi Hub</div>
+          <div class="cert-date">14 Dec 2024</div>
+          <span class="cert-view">View certificate →</span>
+        </div>
+      </div>
+
+      <!-- English Speaker -->
+      <div class="cert-card" data-cat="award" data-src="english_speaker.jpeg" data-pdf="false">
+        <div class="cert-thumb">
+          <img src="english_speaker.jpeg" alt="English Speaker Certificate" loading="lazy">
+        </div>
+        <div class="cert-body">
+          <span class="cert-cat cert-cat--award">Award</span>
+          <div class="cert-title">Certificate of Appreciation — English Speaker</div>
+          <div class="cert-org">Bright Future Public School &amp; College, Umerkot</div>
+          <div class="cert-date">Independence Day 2018</div>
+          <span class="cert-view">View certificate →</span>
+        </div>
+      </div>
+
+      <!-- Prime English -->
+      <div class="cert-card" data-cat="community" data-src="prime.jpeg" data-pdf="false">
+        <div class="cert-thumb">
+          <img src="prime.jpeg" alt="Prime English Language Centre" loading="lazy">
+        </div>
+        <div class="cert-body">
+          <span class="cert-cat cert-cat--community">Community</span>
+          <div class="cert-title">English Language Course — Advance Level I</div>
+          <div class="cert-org">Prime English Language Centre, Umerkot</div>
+          <div class="cert-date">Aug 2021 – Mar 2022</div>
+          <span class="cert-view">View certificate →</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ SKILLS ════════════════ -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="eyebrow reveal">platform 05 — skills</div>
+    <h2 class="section-title reveal">Skills <em>&amp; tools</em>.</h2>
+    <div class="reveal">
+      <div class="skill-group">
+        <h3>programming languages</h3>
+        <div class="pills">
+          <span class="pill pill--cyan">Python</span>
+          <span class="pill pill--cyan">C / C++</span>
+          <span class="pill pill--cyan">HTML</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>ai &amp; machine learning</h3>
+        <div class="pills">
+          <span class="pill pill--violet">Fundamentals of ML</span>
+          <span class="pill pill--violet">Digital Logic Design</span>
+          <span class="pill pill--violet">Generative AI</span>
+          <span class="pill pill--violet">AI Voice Agents (VAPI)</span>
+          <span class="pill pill--violet">AI-Assisted Dev Tools</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>data structures</h3>
+        <div class="pills">
+          <span class="pill pill--violet">Arrays</span>
+          <span class="pill pill--violet">Stacks</span>
+          <span class="pill pill--violet">Queues</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>tools &amp; platforms</h3>
+        <div class="pills">
+          <span class="pill pill--amber">Git / GitHub</span>
+          <span class="pill pill--amber">Microsoft Office</span>
+          <span class="pill pill--amber">Google Workspace</span>
+          <span class="pill pill--amber">SEO Basics</span>
+          <span class="pill pill--amber">Graphic Design</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>soft skills</h3>
+        <div class="pills">
+          <span class="pill pill--green">Analytical Thinking</span>
+          <span class="pill pill--green">Problem Solving</span>
+          <span class="pill pill--green">Fast Learner</span>
+          <span class="pill pill--green">Teamwork</span>
+          <span class="pill pill--green">Communication</span>
+          <span class="pill pill--green">Adaptability</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>languages spoken</h3>
+        <div class="pills">
+          <span class="pill pill--cyan">English</span>
+          <span class="pill pill--cyan">Urdu</span>
+          <span class="pill pill--cyan">Sindhi</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ EDUCATION ════════════════ -->
+<section class="section" id="education">
+  <div class="container">
+    <div class="eyebrow reveal">platform 06 — education</div>
+    <h2 class="section-title reveal">Education <em>&amp; training</em>.</h2>
+
+    <div class="edu-card reveal">
+      <div class="edu-head">
+        <div>
+          <div class="edu-degree">Bachelor of Science in Artificial Intelligence</div>
+          <div class="edu-school">SZABIST University, Karachi</div>
+        </div>
+        <div class="edu-meta">Current Semester · 2nd<br>Expected Graduation · 2029</div>
+      </div>
+      <div class="course-tags">
+        <span class="pill pill--cyan" style="font-size:.74rem">Digital Logic Design</span>
+        <span class="pill pill--cyan" style="font-size:.74rem">Fundamentals of ML</span>
+        <span class="pill pill--cyan" style="font-size:.74rem">Data Structures</span>
+        <span class="pill pill--cyan" style="font-size:.74rem">Programming Fundamentals</span>
+      </div>
+    </div>
+
+    <p class="eyebrow reveal" style="margin-bottom:1.4rem">workshops &amp; certifications</p>
+    <div class="workshop-grid reveal">
+      <div class="workshop-card">
+        <span class="workshop-tag">applied ai</span>
+        <h4>Build with AI — Deployment Masterclass</h4>
+        <p>GDGoC On Campus · DHA Suffa University (2026)</p>
+      </div>
+      <div class="workshop-card">
+        <span class="workshop-tag">generative ai</span>
+        <h4>Generative AI Mastermind</h4>
+        <p>Outskill (2026)</p>
+      </div>
+      <div class="workshop-card">
+        <span class="workshop-tag">voice ai</span>
+        <h4>Building AI Voice Agents with VAPI</h4>
+        <p>DataCrumbs (Feb 2026)</p>
+      </div>
+      <div class="workshop-card">
+        <span class="workshop-tag">cybersecurity</span>
+        <h4>Introduction to Cybersecurity Awareness</h4>
+        <p>HP LIFE · HP Foundation (Apr 2025)</p>
+      </div>
+      <div class="workshop-card">
+        <span class="workshop-tag">ai basics</span>
+        <h4>AI for Beginners</h4>
+        <p>HP LIFE · HP Foundation (May 2025)</p>
+      </div>
+      <div class="workshop-card">
+        <span class="workshop-tag">seo</span>
+        <h4>3-Day SEO Workshop</h4>
+        <p>Aptech Gulshan-e-Iqbal (Apr 2026)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ ACTIVITIES ════════════════ -->
+<section class="section" id="activities">
+  <div class="container">
+    <div class="eyebrow reveal">platform 07 — beyond the classroom</div>
+    <h2 class="section-title reveal">Activities <em>&amp; leadership</em>.</h2>
+    <div class="reveal">
+      <div class="act-item">
+        <div class="act-tag">volunteer</div>
+        <div>
+          <h3>Green Heart Volunteer (GHV-2030)</h3>
+          <p>Selected for the May–July 2026 cycle with the Green Heart Movement of Taskeen Health Initiative — helping raise mental health awareness and make mental health services more accessible across Pakistan.</p>
+        </div>
+      </div>
+      <div class="act-item">
+        <div class="act-tag">delegate</div>
+        <div>
+          <h3>Delegate — KhiNext 2026</h3>
+          <p>Attended Asia's first multi-domain AI and Innovation Summit at PC Hotel Karachi (June 7, 2026) — networking with innovators, industry leaders, and AI researchers.</p>
+        </div>
+      </div>
+      <div class="act-item">
+        <div class="act-tag">community</div>
+        <div>
+          <h3>Volunteer, Voice of Hope (Karachi Team)</h3>
+          <p>Contributing to community-focused initiatives promoting empowerment and social well-being across Karachi.</p>
+        </div>
+      </div>
+      <div class="act-item">
+        <div class="act-tag">events</div>
+        <div>
+          <h3>Volunteer, Job Fair 4.0 — Pakistan Hindu Council</h3>
+          <p>Organized and managed event activities — coordinating with participants, guiding attendees, and handling logistics in a fast-paced environment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ CONTACT ════════════════ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="eyebrow reveal">final destination</div>
+    <h2 class="section-title reveal">Let's <em>connect</em>.</h2>
+    <p class="contact-intro reveal">Open to internship opportunities in AI, Machine Learning, and Software Development. Whether it's a role, a project, or just a hello — feel free to reach out.</p>
+    <div class="contact-grid reveal">
+      <a href="mailto:lalwanineeraj550@gmail.com" class="contact-card">
+        <span class="contact-label">email</span>
+        <span class="contact-val">lalwanineeraj550@gmail.com</span>
+      </a>
+      <a href="tel:+923360123263" class="contact-card">
+        <span class="contact-label">phone</span>
+        <span class="contact-val">+92 336 0123263</span>
+      </a>
+      <a href="https://www.linkedin.com/in/neeraj-kumar-3601a03a7/" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-label">linkedin</span>
+        <span class="contact-val">neeraj-kumar</span>
+      </a>
+      <a href="https://github.com/Neeraj3456" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-label">github</span>
+        <span class="contact-val">Neeraj3456</span>
+      </a>
+      <a href="https://neeraj3456.github.io" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-label">portfolio</span>
+        <span class="contact-val">neeraj3456.github.io</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Neeraj Kumar · Built with curiosity in Karachi 🚀</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate viewer">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lbClose" aria-label="Close">✕ close</button>
+    <div id="lbContent"></div>
+  </div>
+</div>
+
+<!-- Scroll to top -->
+<button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script src="main.js"></script>
+</body>
+</html>
