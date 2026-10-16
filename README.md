@@ -16,6 +16,7 @@ BS Artificial Intelligence student (3rd semester) at **SZABIST Karachi** · Pyth
 - 📚 Digital Skills Training Program: Python for AI (AshreiTech, NASTP Karachi)
 - 🤝 Campus Ambassador: Karachi Youth Summit (Alkhidmat), PTE Pakistan, Builders Hub
 - ⚙️ Member, ASME SZABIST Society
+- 🙌 Volunteer: Funoon Forum, Alkhidmat Foundation, Voice of Hope, Green Heart Movement
 
 ## Tech
 `Python` `PyTorch` `scikit-learn` `NLTK` `YOLOv8` `Flask` `React` `MySQL` `Git`
