@@ -604,3 +604,6 @@ footer {
   .status-dot { animation:none; }
   html { scroll-behavior:auto; }
 }
+
+/* New cards stay hidden until their image file exists */
+.cert-pending:not(.cert-ok){display:none}

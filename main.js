@@ -183,10 +183,10 @@ document.querySelectorAll('.cert-card').forEach(card => {
   const el = document.getElementById('typedText');
   if (!el) return;
   const texts = [
-    'AI Student | Building Intelligent Systems',
-    'ML Intern @ Arch Technologies',
-    'ZAB-E-FEST Code Crafters 🏆',
-    'PTE Pakistan Campus Ambassador'
+    'BS AI Student | Python, PyTorch & NLP',
+    'Built RailNova, 4 AI Projects & an AI Agent',
+    'Director of Events & Operations @ ASME SZABIST',
+    'ZAB-E-FEST Code Crafters 🏆'
   ];
   let ti = 0, ci = 0, deleting = false;
 
@@ -216,3 +216,19 @@ document.querySelectorAll('.stat-card').forEach(card => {
     card.style.transform = '';
   });
 });
+
+
+/* ── Cards whose image is not in the repo yet stay hidden; keep the count in sync ── */
+(function pendingCerts() {
+  const counter = document.getElementById('certCount');
+  const update = () => {
+    if (counter) counter.textContent = document.querySelectorAll('.cert-card:not(.cert-pending), .cert-pending.cert-ok').length;
+  };
+  document.querySelectorAll('.cert-pending').forEach(card => {
+    const img = card.querySelector('img');
+    const ok = () => { card.classList.add('cert-ok'); update(); };
+    if (img.complete && img.naturalWidth > 0) ok();
+    else img.addEventListener('load', ok, { once: true });
+  });
+  update();
+})();
